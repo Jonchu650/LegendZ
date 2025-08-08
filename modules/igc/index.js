@@ -137,6 +137,12 @@ const missionCommand = {
           content: "Insufficient permissions.",
           flags: MessageFlags.Ephemeral
         });
+      } // <-- Fill with the channel ID allowed for pings
+      if (interaction.channelId !== "1396047242154217544") {
+        return interaction.reply({
+          content: `❌ This command can only be used in <#1396047242154217544>.`,
+          flags: MessageFlags.Ephemeral
+        });
       }
       const now = Date.now();
       if (now - cooldowns.missionPing < cooldownMs) {
