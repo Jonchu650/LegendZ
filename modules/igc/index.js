@@ -157,7 +157,8 @@ const missionCommand = {
       // Set cooldown
       cooldowns.missionPing = now;
       await interaction.reply({
-        content: `<@&1403019498700931083> ${interaction.user} needs help with their missions!`
+        content: `<@&1403019498700931083> ${interaction.user} needs help with their missions!`,
+        allowedMentions: { roles: ["1403019498700931083"]}
       });
     }
 
