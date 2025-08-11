@@ -119,7 +119,7 @@ const missionCommand = {
       });
     } else if (sub === "resetall") {
       const roleId = process.env.STAFF_ROLE_ID?.trim();
-      if (!roleId || !interaction.member.roles.resolve(roleId)) {
+      if (interaction.user.id !== "826522669381058612") {
         return interaction.reply({
           content: "Insufficient permissions.",
           flags: MessageFlags.Ephemeral
