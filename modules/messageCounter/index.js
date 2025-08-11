@@ -159,7 +159,7 @@ const commands = [
       if (sub === "reset") {
         if (interaction.user.id !== "826522669381058612") {
           return interaction.reply({
-            content: "Insufficient permissions.",
+            content: "Insufficient permissions. Ask Jonchu to reset.",
             flags: MessageFlags.Ephemeral
           });
         }

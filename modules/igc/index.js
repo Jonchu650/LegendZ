@@ -118,10 +118,9 @@ const missionCommand = {
         flags: MessageFlags.Ephemeral
       });
     } else if (sub === "resetall") {
-      const roleId = process.env.STAFF_ROLE_ID?.trim();
       if (interaction.user.id !== "826522669381058612") {
         return interaction.reply({
-          content: "Insufficient permissions.",
+          content: "Insufficient permissions, ask Jonchu to reset.",
           flags: MessageFlags.Ephemeral
         });
       }
