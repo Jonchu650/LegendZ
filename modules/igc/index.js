@@ -130,7 +130,7 @@ const missionCommand = {
         flags: MessageFlags.Ephemeral
       });
     } else if (sub === "ping") {
-      const roleId = "981834190607761499";
+      const roleId = "1403019498700931083";
       if (!roleId || !interaction.member.roles.resolve(roleId)) {
         return interaction.reply({
           content: "Insufficient permissions.",
